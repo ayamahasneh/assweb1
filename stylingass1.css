@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #D4DBDD;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  color: #800080;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Times New Roman';
+}
+
+.container {
+  max-width: 960px; /*the container will be 960px not more than this (automatically adjust)*/
+  margin: 20px auto;
+  display: flex;/* CSS that allows flexible and responsive layouts*/
+  flex-wrap: wrap; /* allows flex items to wrap to the next line if the container's width is not enough to fit all
+   items on a single line, making it useful for responsive designs on smaller screens.*/
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: #c9aeae;
+  margin-right: 25px;
+  position: relative;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  background-color: #1e90ff;
+  color: #000;
+  font-size: 125%;
+  padding: 5px 10px;
+  position: absolute;
+  border: 2px solid #000;
+
+  top: 0;
+  right: 0;
+}
+
+
+.el span{
+  background-color: #95bccb;
+}
+.wd span{
+  background-color: antiquewhite;
+}
+.fl span{
+  background-color: #956b95;
+}
+span:hover {
+  color: #000;
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .section {
+    margin: 0 0 20px;
+  }
+}
+ul{
+  padding: 10px 10px ;
+}
